@@ -12,7 +12,7 @@ bot.on("ready", () => {
   bot.user.setGame(`>_ Anaria V1.0.0 by Kaw!ep™`, "https://www.twitch.tv/AriaV1")
 });
 
-bot.login('NTY1MDg5MzA4NzUxNDI5NjMy.XKxWvw.AXiAG0IxI774oBvqbDWE7sKECig')
+bot.login('process.env.TOKEN')
 
 bot.on('message', message => {
   
@@ -69,6 +69,7 @@ bot.on('guildMemberAdd', member => {
     }
   });
 
+  
 bot.on('message', message => {
   // Ignore messages that aren't from a guild
   if (!message.guild) return;
